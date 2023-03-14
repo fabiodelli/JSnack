@@ -1,14 +1,7 @@
-const firstWord = prompt("inserisci una parola")
-/* console.log(firstNumber) */
+let tot= 0
 
-const secondWord = prompt("inserisci una parola")
-/* console.log(secondNumber) */
-
-if (firstWord.length > secondWord.length){
-    console.log(`${secondWord} ${firstWord} la prima parola è piu lunga`)}
-    else if (secondWord.length > firstWord.length) {
-        console.log(`${firstWord} ${secondWord} la seconda parola è piu lunga`)
-    }
-    else {
-        console.log(`le parole hanno la solita lunghezza`)
-    }
+for(let i = 1; i <= 10; i++ ){
+    const insertNumber = Number(prompt("Inserisci un numero"))
+    tot = tot + insertNumber
+    console.log(tot)
+}
