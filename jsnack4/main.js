@@ -4,19 +4,21 @@
 const insertName = prompt("Inserisci il tuo nome")
 console.log(insertName)
 
-for(let i = 0 ; i < invitedList.lenght ; i++ ){
-    if(insertName == invitedList ) {
+/* for(let i = 0 ; i < invitedList.length ; i++ ){
+    const currentName = invitedList[i]
+
+    if(insertName == currentName) {
         console.log("ammesso")
-    }  else  {
-        console.log("non ammesso")
-    }
-}
+    }  
+} */
 
+let i = 0
 
+while (i < invitedList.length) {
+    const currentName = invitedList[i]
 
-/* while (i <= 10) {
-   const insertNumber = Number(prompt("Inserisci un numero"))
-    tot = tot + insertNumber 
+    if(insertName == currentName)
+        console.log("ammesso")
     i++
 }
-console.log(tot) */
+console.log()
